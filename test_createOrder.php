@@ -9,16 +9,18 @@ $CC = new CitycourierApi($_CONFIG);
 if ($CC->passwordGrant($_CONFIG['userId'], $_CONFIG['userPassword']))
 {
     $params = [
-        'ready_time'       => '2020-04-29 15:00:00',
+        //'dryRun'           => true,
+        //'ready_time'       => '2020-04-29 15:00:00',
         'type'             => 1,
         'priority'         => '120',
         'invoice'          => 'faktura_o',
         'car'              => 'osobne',
+        'user_reference'   => 'VASA_REFERENCIA',
         'cash_on_delivery' => ['price' => '6.95',
                                'vs'    => '180030'],
         'recipient'        => ['name'    => 'Jozef',
                                'phone'   => '0702123321',
-                               'address' => '8. mája 24',
+                               'address' => '8. májaaa 24',
                                'city'    => 'Bratislava',
                                'psc'     => '811 08'],
         'package'          => ['weight'      => '50',
