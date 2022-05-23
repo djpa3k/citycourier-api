@@ -22,7 +22,12 @@ if ($CC->passwordGrant($_CONFIG['userId'], $_CONFIG['userPassword']))
                                'phone'   => '0702123321',
                                'address' => '8. májaaa 24',
                                'city'    => 'Bratislava',
-                               'psc'     => '811 08'],
+                               'psc'     => '811 08',
+                               'email'  => '',
+                               'ico'    => '654321',
+                               'icdph'  => 'SK654321',
+                               'dic'    => '123456',
+                            ],
         'package'          => ['weight'      => '50',
                                'count'       => 2,
                                'description' => 'Balicek plny prekvapeni']
